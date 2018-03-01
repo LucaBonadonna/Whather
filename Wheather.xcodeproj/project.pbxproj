@@ -14,6 +14,14 @@
 		BE285064204815B900CB057A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE285062204815B900CB057A /* LaunchScreen.storyboard */; };
 		BE28506F204815B900CB057A /* WheatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28506E204815B900CB057A /* WheatherTests.swift */; };
 		BE28507A204815B900CB057A /* WheatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE285079204815B900CB057A /* WheatherUITests.swift */; };
+		BE28508F204819CB00CB057A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE28508E204819CB00CB057A /* CoreMedia.framework */; };
+		BE285091204819DA00CB057A /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE285090204819DA00CB057A /* CoreMotion.framework */; };
+		BE285093204819E600CB057A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE285092204819E600CB057A /* AVFoundation.framework */; };
+		BE285095204819F000CB057A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE285094204819F000CB057A /* SystemConfiguration.framework */; };
+		BE285097204819FB00CB057A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE285096204819FB00CB057A /* OpenGLES.framework */; };
+		BE28509E20481B3700CB057A /* libTestFairy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE28509B20481B3700CB057A /* libTestFairy.a */; };
+		BE28509F20481B3700CB057A /* upload-dsym.sh in Resources */ = {isa = PBXBuildFile; fileRef = BE28509D20481B3700CB057A /* upload-dsym.sh */; };
+		BE2850A020481B5000CB057A /* TestFairy.h in Sources */ = {isa = PBXBuildFile; fileRef = BE28509C20481B3700CB057A /* TestFairy.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,15 @@
 		BE285075204815B900CB057A /* WheatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WheatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE285079204815B900CB057A /* WheatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheatherUITests.swift; sourceTree = "<group>"; };
 		BE28507B204815B900CB057A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE28508E204819CB00CB057A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		BE285090204819DA00CB057A /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		BE285092204819E600CB057A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BE285094204819F000CB057A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BE285096204819FB00CB057A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		BE28509B20481B3700CB057A /* libTestFairy.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFairy.a; sourceTree = "<group>"; };
+		BE28509C20481B3700CB057A /* TestFairy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFairy.h; sourceTree = "<group>"; };
+		BE28509D20481B3700CB057A /* upload-dsym.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "upload-dsym.sh"; sourceTree = "<group>"; };
+		BE2850A120481BAD00CB057A /* Wheather-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wheather-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +71,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE285097204819FB00CB057A /* OpenGLES.framework in Frameworks */,
+				BE28509E20481B3700CB057A /* libTestFairy.a in Frameworks */,
+				BE285095204819F000CB057A /* SystemConfiguration.framework in Frameworks */,
+				BE285093204819E600CB057A /* AVFoundation.framework in Frameworks */,
+				BE285091204819DA00CB057A /* CoreMotion.framework in Frameworks */,
+				BE28508F204819CB00CB057A /* CoreMedia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +104,7 @@
 				BE28506D204815B900CB057A /* WheatherTests */,
 				BE285078204815B900CB057A /* WheatherUITests */,
 				BE285057204815B900CB057A /* Products */,
+				BE28508D204819CB00CB057A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +121,16 @@
 		BE285058204815B900CB057A /* Wheather */ = {
 			isa = PBXGroup;
 			children = (
+				BE28509B20481B3700CB057A /* libTestFairy.a */,
+				BE28509C20481B3700CB057A /* TestFairy.h */,
+				BE28509D20481B3700CB057A /* upload-dsym.sh */,
 				BE285059204815B900CB057A /* AppDelegate.swift */,
 				BE28505B204815B900CB057A /* ViewController.swift */,
 				BE28505D204815B900CB057A /* Main.storyboard */,
 				BE285060204815B900CB057A /* Assets.xcassets */,
 				BE285062204815B900CB057A /* LaunchScreen.storyboard */,
 				BE285065204815B900CB057A /* Info.plist */,
+				BE2850A120481BAD00CB057A /* Wheather-Bridging-Header.h */,
 			);
 			path = Wheather;
 			sourceTree = "<group>";
@@ -123,6 +151,18 @@
 				BE28507B204815B900CB057A /* Info.plist */,
 			);
 			path = WheatherUITests;
+			sourceTree = "<group>";
+		};
+		BE28508D204819CB00CB057A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE285096204819FB00CB057A /* OpenGLES.framework */,
+				BE285094204819F000CB057A /* SystemConfiguration.framework */,
+				BE285092204819E600CB057A /* AVFoundation.framework */,
+				BE285090204819DA00CB057A /* CoreMotion.framework */,
+				BE28508E204819CB00CB057A /* CoreMedia.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +233,7 @@
 				TargetAttributes = {
 					BE285055204815B900CB057A = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					BE285069204815B900CB057A = {
@@ -234,6 +275,7 @@
 			files = (
 				BE285064204815B900CB057A /* LaunchScreen.storyboard in Resources */,
 				BE285061204815B900CB057A /* Assets.xcassets in Resources */,
+				BE28509F20481B3700CB057A /* upload-dsym.sh in Resources */,
 				BE28505F204815B900CB057A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE2850A020481B5000CB057A /* TestFairy.h in Sources */,
 				BE28505C204815B900CB057A /* ViewController.swift in Sources */,
 				BE28505A204815B900CB057A /* AppDelegate.swift in Sources */,
 			);
@@ -426,12 +469,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LP2RT37SZ;
 				INFOPLIST_FILE = Wheather/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Wheather/freamework",
+					"$(PROJECT_DIR)/Wheather",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.LucaBonadonna.Wheather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Wheather/Wheather-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -441,12 +492,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LP2RT37SZ;
 				INFOPLIST_FILE = Wheather/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Wheather/freamework",
+					"$(PROJECT_DIR)/Wheather",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.LucaBonadonna.Wheather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Wheather/Wheather-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
